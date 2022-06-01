@@ -5,7 +5,7 @@ const app = express();
 
 // IMPORTING ROUTES
 const blogRoutes = require('./routes/blogRoutes');
-const authRoutes = require('./routes/authRoutes');
+// const authRoutes = require('./routes/authRoutes');
 
 // MIDDLEWARES
 app.use(logger('dev'));
@@ -15,6 +15,6 @@ app.use(cookieParser());
 
 // MOUNTING ROUTES
 app.use('/blog', blogRoutes);
-app.use('/auth', authRoutes);
+// app.use('/auth', authRoutes);
 
 module.exports = app;
